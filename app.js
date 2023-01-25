@@ -12,17 +12,18 @@ const HBS = hbs.create({});
 var Handlebars = require('handlebars');
 
 
-var engines = require('consolidate');
-var swig = require('swig')
+// var engines = require('consolidate');
+// var swig = require('swig')
 
 var app = express();
 
 
 // view engine setup
-app.engine('html', engines.swig);
+// app.engine('html', engines.swig);
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'html');
-// app.engine('hbs', hbs.engine({ extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views/layout/', partialsDir: __dirname + '/views/partials/' }));
+app.set('view engine', 'hbs');
+app.engine('hbs', hbs.engine({ extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views/layout/', partialsDir: __dirname + '/views/partials/' }));
+
 
 app.use(logger('dev'));
 app.use(express.json());
