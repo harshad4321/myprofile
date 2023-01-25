@@ -132,7 +132,7 @@ background: #fff;
 }
 #preloader .load :nth-child(2) {
 animation-delay: -1s;
-background: hsl(18, 54%, 40%);
+background:#1b3f65
 }
 #preloader .load :nth-child(3) {
 animation-delay: -0.5s;
@@ -140,7 +140,7 @@ filter: blur();
 background: #fff;
 }
 #preloader .load :last-child {
-background:hsl(18, 54%, 40%);
+background:#1b3f65;
 }
 
 @keyframes spin {

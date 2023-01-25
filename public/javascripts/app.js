@@ -36,3 +36,28 @@ $(document).ready(function () {
 
   randomizeOrder();
 });
+
+// FUNCTIONS
+
+function fadeOutPreloader(element, duration) {
+  opacity = 1;
+
+  interval = setInterval(function () {
+    if (opacity <= 0) {
+      element.style.zIndex = 0;
+      element.style.opacity = 0;
+      element.style.filter = 'alpha(opacity = 0)';
+
+      // Allow horizontal scroll
+      document.documentElement.style.overflowY = 'auto';
+
+      document.getElementById('preloader').remove();
+
+      clearInterval(interval);
+    } else {
+      opacity -= 0.1;
+      element.style.opacity = opacity;
+      element.style.filter = 'alpha(opacity = ' + opacity * 100 + ')';
+    }
+  }, duration);
+}
