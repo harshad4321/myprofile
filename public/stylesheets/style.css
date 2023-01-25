@@ -11,6 +11,90 @@ html, body {
   background:radial-gradient(ellipse at bottom, #1b3f65  0%, #000000e6 100%);
 }
 
+/* // Typography */
+
+h1 {
+font-size: 2rem;
+font-weight: 600;
+line-height: 2rem;
+}
+
+p {
+word-spacing: 0.1rem;
+}
+
+a {
+color: #ff073a;
+text-decoration: none;
+}
+a:hover {
+color: #fff;
+}
+
+.highlight-title {
+color: #ff073a;
+text-shadow: 0.25rem 0.25rem 0.25rem #ff073a;
+}
+
+.highlight-link {
+box-shadow: inset 0 -0.125rem 0 #ff073a;
+box-sizing: border-box;
+color: #ff073a;
+display: inline-block;
+padding: 0.125rem 0.125rem;
+transition: all 0.2s ease-in-out;
+}
+.highlight-link:hover {
+box-shadow: inset 0 -2rem 0 0 #ff073a;
+color: #fff;
+}
+
+/* // Layout */
+
+.layout {
+margin: 0.5rem;
+max-width: 75em;
+padding: 0.5rem 0.5rem;
+}
+
+.layout .card {
+background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, rgba(43, 45, 47, 1) 80%);
+border-radius: 2rem;
+margin: 3rem 0;
+padding: 1rem 2rem;
+}
+
+.layout .card .title {
+text-align: center;
+position: relative;
+}
+
+.layout .card .subtitle {
+text-align: center;
+}
+
+.layout .card .description {
+text-align: justify;
+}
+
+.neumorphism-button {
+background: linear-gradient(
+145deg,
+rgba(100, 100, 105, 0.15) 15%,
+rgba(33, 33, 33, 0.4) 80%
+);
+box-shadow: -4px -3px 2px 0 rgba(250, 250, 250, 0.13),
+4px 4px 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.neumorphism-card {
+box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 1), inset -2px -2px 4px rgba(99, 99, 99, 1);
+}
+
+.neumorphism-card-big {
+box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
+}
+
 /* // Preloader */
 
 #preloader {
