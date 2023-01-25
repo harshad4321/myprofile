@@ -1,12 +1,12 @@
-setTimeout(function () {
-  fadeOutPreloader(document.getElementById('preloader'), 69);
-}, 1500);
 
-$(document).ready(function () {
-  $(window).on('beforeunload', function () {
-    window.scrollTo(0, 0);
-  });
+class Mouse {
+  constructor(canvas) {
+    this.pos = new Vector(-1000, -1000)
+    this.radius = 40
 
-  particlesJS.load('landing', 'assets/particles.json', function () { });
-
-})
+    canvas.onmousemove = e => this.pos.setXY(e.clientX, e.clientY)
+    canvas.ontouchmove = e => this.pos.setXY(e.touches[0].clientX, e.touches[0].clientY)
+    canvas.ontouchcancel = () => this.pos.setXY(-1000, -1000)
+    canvas.ontouchend = () => this.pos.setXY(-1000, -1000)
+  }
+}
