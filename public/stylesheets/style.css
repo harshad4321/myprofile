@@ -1,10 +1,4 @@
 
-  html, body, canvas {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
 html, body {
   width: 100%;
@@ -17,7 +11,66 @@ html, body {
   background:radial-gradient(ellipse at bottom, #1b3f65  0%, #000000e6 100%);
 }
 
-.asset-img {
-  display: none;
+/* // Preloader */
+
+#preloader {
+align-items: center;
+background: rgba(43, 45, 47, 1);
+display: flex;
+height: 100%;
+justify-content: center;
+left: 0;
+margin: 0.5rem;
+padding: 0.5rem;
+position: absolute;
+right: 0;
+z-index: 999;
 }
-/* .canvas-hang{} */
+#preloader .load {
+height: 6rem;
+left: 50%;
+position: absolute;
+top: 50%;
+transform: translate(-50%, -50%);
+width: 6rem;
+}
+#preloader .load hr {
+animation: spin 2s ease infinite;
+border: 0;
+height: 40%;
+margin: 0;
+position: absolute;
+width: 40%;
+}
+#preloader .load :first-child {
+animation-delay: -1.5s;
+background: #fff;
+}
+#preloader .load :nth-child(2) {
+animation-delay: -1s;
+background: hsl(18, 54%, 40%);
+}
+#preloader .load :nth-child(3) {
+animation-delay: -0.5s;
+filter: blur();
+background: #fff;
+}
+#preloader .load :last-child {
+background:hsl(18, 54%, 40%);
+}
+
+@keyframes spin {
+0%,
+100% {
+transform: translate(0);
+}
+25% {
+transform: translate(160%);
+}
+50% {
+transform: translate(160%, 160%);
+}
+75% {
+transform: translate(0, 160%);
+}
+}
