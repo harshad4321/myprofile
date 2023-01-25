@@ -10,3 +10,19 @@ class Mouse {
     canvas.ontouchend = () => this.pos.setXY(-1000, -1000)
   }
 }
+
+class Dot {
+  constructor(x, y) {
+    this.pos = new Vector(x, y)
+    this.oldPos = new Vector(x, y)
+
+    this.friction = 0.97
+    this.gravity = new Vector(0, 0.6)
+    this.mass = 1
+
+    this.pinned = false
+
+    this.lightImg = document.querySelector('#light-img')
+    this.lightSize = 15;
+  }
+}
