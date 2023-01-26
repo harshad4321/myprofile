@@ -1,7 +1,14 @@
 setTimeout(function () {
   fadeOutPreloader(document.getElementById('preloader'), 69);
-}, 1500);
 
+  var container = document.getElementById("preloader");
+  container.style.backgroundColor = " #1b3f65";
+
+}, 1500);
+// setTimeout(function () {
+//   var container = document.getElementById("container");
+//   container.style.backgroundColor = "white";
+// }, 1000);
 
 $(document).ready(function () {
   $(window).on('beforeunload', function () {
@@ -61,3 +68,5 @@ function fadeOutPreloader(element, duration) {
     }
   }, duration);
 }
+
+
