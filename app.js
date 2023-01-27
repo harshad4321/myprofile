@@ -3,6 +3,9 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const fs = require('fs')
+const sass = require('node-sass');
+
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -18,11 +21,44 @@ var Handlebars = require('handlebars');
 var app = express();
 
 
+
+
 // view engine setup
 // app.engine('html', engines.swig);
 app.set('views', path.join(__dirname, 'views'));
+// app.set('views', __dirname + 'views');
 app.set('view engine', 'hbs');
 app.engine('hbs', hbs.engine({ extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views/layout/', partialsDir: __dirname + '/views/partials/' }));
+
+
+
+
+
+const filePath = path.join(__dirname, 'public', 'stylesheets', 'main.scss');
+
+
+// const filePath = '/stylesheets/main.scss'
+console.log(filePath)
+
+if (fs.existsSync(filePath)) {
+  sass.render({
+    file: filePath,
+    outFile: path.join(__dirname, 'public', 'stylesheets', 'main.css'),
+    outputStyle: 'compressed'
+  }, function (error, result) {
+    if (error) {
+      console.log(error);
+    } else {
+      fs.writeFile(path.join(__dirname, 'public', 'stylesheets', 'main.css'), result.css, function (err) {
+        if (!err) {
+          console.log('SASS Compiled');
+        }
+      });
+    }
+  });
+}
+
+
 
 
 app.use(logger('dev'));
