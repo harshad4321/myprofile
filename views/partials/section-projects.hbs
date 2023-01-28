@@ -31,7 +31,7 @@
 {% else %}
 {% assign sort_order = 'pushed_at' %}
 {% endif %}
-{{!--
+
 {% if site.projects.exclude.archived && site.projects.exclude.forks %}
 {% assign filtered_repos = site.github.public_repositories | where:'archived', false | where:'fork', false | sort:
 sort_order | reverse %}
@@ -41,7 +41,7 @@ sort_order | reverse %}
 {% assign filtered_repos = site.github.public_repositories | where:'fork', false | sort: sort_order | reverse %}
 {% else %}
 {% assign filtered_repos = site.github.public_repositories | sort: sort_order | reverse %}
-{% endif %} --}}
+{% endif %}
 
 <div class="projects-wrapper">
   {% for repository in filtered_repos %}
@@ -88,8 +88,8 @@ sort_order | reverse %}
         </svg>
         <div class="social">
           <svg class="social-svg" viewBox="0 0 24 24">
-            <use x="6" y="6" width="12" height="12" viewBox="0 0 24 24"
-              xlink:href="{{ '/assets/img/solid.svg#globe' | prepend: site.baseurl }}"></use>
+            <use x="6" y="6" width="12" height="12" viewBox="0 0 24 24" href="/img/solid.svg#globe">
+            </use>
           </svg>
         </div>
       </a>
