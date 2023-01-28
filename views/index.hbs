@@ -12,14 +12,14 @@
         {{>landing-page}}
         <div class="layout">
             {{!-- {%if site.show_aboutme_card %} --}}
-            {{#if sectionAboutMe}}
+            {{!-- {{#if sectionAboutMe}} --}}
             <section class="card neumorphism-card-big">
 
                 {{>section-aboutme}}
             </section>
             {{!-- {% endif %} --}}
-            {{/if}}
-            {%if site.show_timeline_card %}
+            {{!-- {{/if}} --}}
+            {{!-- {%if site.show_timeline_card %} --}}
             {{!-- {%if site.show_timeline_card %} --}}
             <section class="card neumorphism-card-big">
                 {{>section-timeline}}
@@ -28,12 +28,12 @@
             {{!-- {{/if}} --}}
             {{!-- {%if site.show_projects_card %} --}}
             <section class="card neumorphism-card-big">
-                {% include section-projects.html %}
+                {{!-- {{> section-projects}} --}}
             </section>
-            {% endif %}
-            {%if site.show_skills_card %}
+            {{!-- {% endif %} --}}
+            {{!-- { {%if site.show_skills_card %}} --}}
             <section class="card neumorphism-card-big">
-                {% include section-skills.html %}
+                {{>section-skills}}
             </section>
             {% endif %}
             {%if site.show_contact_card %}
