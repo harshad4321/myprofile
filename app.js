@@ -5,9 +5,17 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const fs = require('fs')
 const sass = require('node-sass');
+const yaml = require('js-yaml');
 
 
 var indexRouter = require('./routes/index');
+
+
+
+
+
+const chokidar = require('chokidar');
+
 var usersRouter = require('./routes/users');
 
 var hbs = require('express-handlebars')
@@ -19,6 +27,41 @@ var Handlebars = require('handlebars');
 // var swig = require('swig')
 
 var app = express();
+
+
+
+// // Define an array of YML file paths
+// const ymlFiles = [
+//   '/views/data/projects.yml',
+//   '/views/data/skills-frameworks.yml',
+//   '/views/data/skills-languages.yml',
+//   '/views/data/skills-tools.yml',
+//   '/views/data/timeline.yml',
+
+// ];
+
+// // Loop through the files and parse each one
+// let data = {};
+// ymlFiles.forEach((file) => {
+//   try {
+//     data[file] = yaml.safeLoad(fs.readFileSync(file, 'utf8'));
+//   } catch (e) {
+//     console.error(e);
+//   }
+// });
+
+
+
+
+const watchData = () => {
+  chokidar.watch(['/views/data/*.yml', '_config.yml', 'assets/*.json']).on('change', (path) => {
+    console.log(`File ${path} has been changed`);
+    // You can run your own code here when the file changes
+  });
+};
+
+watchData();
+
 
 
 
