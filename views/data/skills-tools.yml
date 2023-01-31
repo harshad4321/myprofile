@@ -4,14 +4,16 @@
 - name: Git
   weight: 5
 
+- name: Stackoverflow
+  weight: 5
+
+
 - name: Bitbucket
   weight: 5
 
 - name: SQL
   weight: 5
 
-- name: Jira
-  weight: 4
 
 - name: Bash
   weight: 4

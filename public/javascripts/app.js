@@ -11,7 +11,7 @@ $(document).ready(function () {
     window.scrollTo(0, 0);
   });
 
-  // particlesJS.load('landing', 'assets/particles.json', function () { });
+  particlesJS.load('landing', 'assets/particles.json', function () { });
 
   // Typing Text
   var element = document.getElementById('txt-rotate');

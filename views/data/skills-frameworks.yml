@@ -1,5 +1,28 @@
-- name: 
-  weight: 5
 
-- name:
+- name: Node.js
   weight: 4
+
+- name: Express.js
+  weight: 4
+
+- name: Mongo DB
+  weight: 4
+
+- name: React
+  weight: 2
+
+- name: Socket.io
+  weight: 3
+
+- name: Jwt
+  weight: 3
+
+- name: Ajax
+  weight: 3
+
+- name: Jquery
+  weight: 3
+
+- name: Bootstrap
+  weight: 2
+ 

@@ -1,14 +1,17 @@
-- name: Python
+- name: JavaScript
   weight: 5
 
-- name: JS
+- name: HTML 
   weight: 4
+
+- name: CSS 
+  weight: 4
+
+- name: Java 
+  weight: 2
+
+- name: Phyton
+  weight: 2
 
 - name: C++
-  weight: 4
-
-- name: C
-  weight: 3
-
-- name: Ruby
   weight: 2

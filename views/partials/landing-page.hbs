@@ -1,16 +1,17 @@
 <div id="landing">
   <div class="landing-title">
+
     <img src="https://media.giphy.com/media/xTiIzJSKB4l7xTouE8/giphy.gif">
     <h1>Hi, I&#39;m
-      <span class="highlight-title">{{site.username}}</span>,
+      <span class="highlight-title">{{Data.username}}</span>,
     </h1>
     <h1>
-      <span id="txt-rotate" data-period="1000" data-rotate='["{{site.typing_text}}", "scroll down for more."]'>
+      <span id="txt-rotate" data-period="1000" data-rotate='["{{Data.typing_text}}", "scroll down for more."]'>
       </span>
     </h1>
     <div class="landing-icons">
       {{!-- {% if site.email != null %} --}}
-      <a class="social-link email" aria-label="My E-Mail" href="mailto:{{site.email}}">
+      <a class="social-link email" aria-label="My E-Mail" href="mailto:{{Data.email}}">
         <svg viewBox="0 0 200 200" class="circle">
           <circle cx="100" cy="100" r="80" />
         </svg>
@@ -25,7 +26,7 @@
 
       {{!-- {% if site.telegram_username != null %} --}}
       <a class="social-link telegram" aria-label="My Telegram" target="_blank" rel="noreferrer"
-        href="https://telegram.me/{{site.telegram_username}}">
+        href="https://telegram.me/{{Data.telegram_username}}">
         <svg viewBox="0 0 200 200" class="circle">
           <circle cx="100" cy="100" r="80" />
         </svg>
@@ -41,7 +42,7 @@
 
       {{!-- {% if site.linkedin_username != null %} --}}
       <a class="social-link linkedin" aria-label="My LinkedIn" target="_blank" rel="noreferrer"
-        href="https://www.linkedin.com/in/{{site.linkedin_username}}">
+        href="https://www.linkedin.com/in/{{Data.linkedin_username}}">
         <svg viewBox="0 0 200 200" class="circle">
           <circle cx="100" cy="100" r="80" />
         </svg>
@@ -57,7 +58,7 @@
 
       {{!-- {% if site.github_username != null %} --}}
       <a class="social-link github" aria-label="My GitHub" target="_blank" rel="noreferrer"
-        href="https://github.com/{{site.github_username}}">
+        href="https://github.com/{{Data.github_username}}">
         <svg viewBox="0 0 200 200" class="circle">
           <circle cx="100" cy="100" r="80" />
         </svg>
@@ -73,7 +74,7 @@
 
       {{!-- {% if site.viber_number != null %} --}}
       <a class="social-link viber" aria-label="My Viber" target="_blank" rel="noreferrer"
-        href="viber://chat?number={{site.viber_number}}">
+        href="viber://chat?number={{Data.viber_number}}">
         <svg viewBox="0 0 200 200" class="circle">
           <circle cx="100" cy="100" r="80" />
         </svg>
@@ -88,7 +89,7 @@
 
       {{!-- {% if site.instagram_username != null %} --}}
       <a class="social-link instagram" aria-label="My Instagram" target="_blank" rel="noreferrer"
-        href="https://www.instagram.com/{{site.instagram_username}}">
+        href="https://www.instagram.com/{{Data.instagram_username}}">
         <svg viewBox="0 0 200 200" class="circle">
           <circle cx="100" cy="100" r="80" />
         </svg>
@@ -122,3 +123,4 @@
     </div>
   </div>
 </div>
+{{!-- {{/if}} --}}

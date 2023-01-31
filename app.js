@@ -7,15 +7,11 @@ const fs = require('fs')
 const sass = require('node-sass');
 const yaml = require('js-yaml');
 
-
-var indexRouter = require('./routes/index');
-
-
-
-
-
 const chokidar = require('chokidar');
 
+//router
+
+var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var hbs = require('express-handlebars')
@@ -29,22 +25,30 @@ var Handlebars = require('handlebars');
 var app = express();
 
 
+// // Read the YML file
+// const projects = path.join(__dirname, 'views', 'data', 'projects.yml');
+// const skill = path.join(__dirname, 'views', 'data', 'skills-frameworks.yml');
+// const languages = path.join(__dirname, 'views', 'data', 'skills-languages.yml');
+// const tolls = path.join(__dirname, 'views', 'data', 'skills-tools.yml');
+// const timeline = path.join(__dirname, 'views', 'data', 'timeline.yml');
+
 
 // // Define an array of YML file paths
 // const ymlFiles = [
-//   '/views/data/projects.yml',
-//   '/views/data/skills-frameworks.yml',
-//   '/views/data/skills-languages.yml',
-//   '/views/data/skills-tools.yml',
-//   '/views/data/timeline.yml',
-
+//   projects,
+//   skill,
+//   languages,
+//   tolls,
+//   timeline
 // ];
+
+// console.log(ymlFiles)
 
 // // Loop through the files and parse each one
 // let data = {};
 // ymlFiles.forEach((file) => {
 //   try {
-//     data[file] = yaml.safeLoad(fs.readFileSync(file, 'utf8'));
+//     data[file] = yaml.load(fs.readFileSync(file, 'utf8'));
 //   } catch (e) {
 //     console.error(e);
 //   }
@@ -53,14 +57,14 @@ var app = express();
 
 
 
-const watchData = () => {
-  chokidar.watch(['/views/data/*.yml', '_config.yml', 'assets/*.json']).on('change', (path) => {
-    console.log(`File ${path} has been changed`);
-    // You can run your own code here when the file changes
-  });
-};
+// const watchData = () => {
+//   chokidar.watch(['/views/data/*.yml', '_config.yml', 'assets/*.json']).on('change', (path) => {
+//     console.log(`File ${path} has been changed`);
+//     // You can run your own code here when the file changes
+//   });
+// };
 
-watchData();
+// watchData();
 
 
 
