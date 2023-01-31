@@ -1,24 +1,24 @@
 - name: GitLab
-  weight: 5
+  weight: 1
 
-- name: Git
+- name: GitHub
   weight: 5
 
 - name: Stackoverflow
-  weight: 5
+  weight: 4
 
 
 - name: Bitbucket
-  weight: 5
+  weight: 2
 
 - name: SQL
-  weight: 5
+  weight: 3
 
 
 - name: Bash
-  weight: 4
+  weight: 1
 
-- name: Jenkins
+- name: kubernetes
   weight: 3
 
 - name: Docker

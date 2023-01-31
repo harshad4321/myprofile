@@ -17,13 +17,15 @@
   </div>
   {{/each}}
 
-  {{#each skill}}
-  <div skill-type="framework" skill-weight="{{framework.weight}}" data-aos="zoom-in">
-    {{framework.name}}
+  {{#each skills}}
+  <div skill-type="framework" skill-weight="{{this.weight}}" data-aos="zoom-in">
+    {{this.name}}
   </div>
   {{/each}}
-  <div skill-type="tool" skill-weight="{{tool.weight}}" data-aos="zoom-in">
-    {{tool.name}}
+  {{#each tolls}}
+
+  <div skill-type="tool" skill-weight="{{this.weight}}" data-aos="zoom-in">
+    {{this.name}}
   </div>
-  {{!-- {% endfor %} --}}
+  {{/each}}
 </div>

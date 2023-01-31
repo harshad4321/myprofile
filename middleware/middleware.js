@@ -31,7 +31,7 @@
 //             data[file] = yaml.load(fs.readFileSync(file, 'utf8'));
 //         } catch (e) {
 //             console.error(e);
-//         }
+//         } 
 //     });
 
 // });

@@ -1,6 +1,6 @@
 
 - name: Node.js
-  weight: 4
+  weight: 5
 
 - name: Express.js
   weight: 4
@@ -9,7 +9,7 @@
   weight: 4
 
 - name: React
-  weight: 2
+  weight: 1
 
 - name: Socket.io
   weight: 3
