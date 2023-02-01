@@ -1,32 +1,32 @@
-{% if site.show_projects %}
+{{!-- {% if site.show_projects %} --}}
 <h1 class="title"><span>{{site.projects_title}}</span></h1>
 <div class="projects-wrapper">
-  {% for project in site.data.projects %}
+  {{!-- {% for project in site.data.projects %} --}}
   <div class="project neumorphism-card" data-aos="zoom-in-down">
     <div class="name-link-wrapper">
       <h3>{{project.name}}</h3>
     </div>
     <p class="project-desc">{{project.descr}}</p>
-    {% if project.project-page %}
+    {{!-- {% if project.project-page %} --}}
     <a class="highlight-link" href="{{project.project-page}}" target="_blank" rel="noreferrer">
       Project Page
     </a>
-    {% endif %}
-    {% if project.tags %}
+    {{!-- {% endif %} --}}
+    {{!-- {% if project.tags %} --}}
     <div class="tag-wrapper">
-      {% for tag in project.tags %}
+      {{!-- {% for tag in project.tags %} --}}
       <span class="tag neumorphism-card">{{tag.tag}}</span>
-      {% endfor %}
+      {{!-- {% endfor %} --}}
     </div>
-    {% endif %}
+    {{!-- {% endif %} --}}
   </div>
-  {% endfor %}
+  {{!-- {% endfor %} --}}
 </div>
-{% endif %}
+{{!-- {% endif %} --}}
 
 {% if site.show_os_projects %}
 <h1 class="title">{{site.os_projects_title}}</h1>
-{% if site.projects.sort_by == 'stars' %}
+{{!-- {% if site.projects.sort_by == 'stars' %}
 {% assign sort_order = 'stargazers_count', 'last' %}
 {% else %}
 {% assign sort_order = 'pushed_at' %}
@@ -41,16 +41,16 @@ sort_order | reverse %}
 {% assign filtered_repos = site.github.public_repositories | where:'fork', false | sort: sort_order | reverse %}
 {% else %}
 {% assign filtered_repos = site.github.public_repositories | sort: sort_order | reverse %}
-{% endif %}
+{% endif %} --}}
 
 <div class="projects-wrapper">
-  {% for repository in filtered_repos %}
-  {% unless site.projects.exclude.projects contains repository.name %}
+  {{!-- {% for repository in filtered_repos %}
+  {% unless site.projects.exclude.projects contains repository.name %} --}}
   <div class="project neumorphism-card" data-aos="zoom-in-down">
     <div class="name-link-wrapper">
       <h3 style="color: white">{{ repository.name }}</h3>
       <div class="links">
-        {% if repository.stargazers_count != 0 %}
+        {{!-- {% if repository.stargazers_count != 0 %} --}}
         <a href="{{ repository.html_url }}/stargazers" class="project-stars-forks">
           <svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
             <path fill-rule="evenodd"
@@ -58,8 +58,8 @@ sort_order | reverse %}
             </path>
           </svg>{{ repository.stargazers_count }}
         </a>
-        {% endif %}
-        {% if repository.forks_count != 0 %}
+        {{!-- {% endif %}
+        {% if repository.forks_count != 0 %} --}}
         <a href="{{ repository.html_url }}/network/members" class="project-stars-forks">
           <svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
             <path fill-rule="evenodd"
@@ -67,19 +67,19 @@ sort_order | reverse %}
             </path>
           </svg>{{ repository.forks_count }}
         </a>
-        {% endif %}
+        {{!-- {% endif %} --}}
       </div>
     </div>
     <p class="project-desc">{{repository.description}}</p>
-    {% if repository.homepage != "" and repository.homepage != nil %}
+    {{!-- {% if repository.homepage != "" and repository.homepage != nil %} --}}
     <a class="highlight-link" href="{{repository.homepage}}" target="_blank" rel="noreferrer">
       Demo
     </a>
-    {% endif %}
+    {{!-- {% endif %} --}}
     <a class="highlight-link" href="{{repository.html_url}}" target="_blank" rel="noreferrer">
       GitHub
     </a>
-    {% if site.github_pages contains repository.name %}
+    {{!-- {% if site.github_pages contains repository.name %} --}}
     <div class="landing-icons" style="justify-content: right">
       <a class="social-link telegram" aria-label="Website" target="_blank" rel="noreferrer"
         href="https://{{site.github_username}}.github.io/{{repository.name}}">
@@ -93,17 +93,18 @@ sort_order | reverse %}
           </svg>
         </div>
       </a>
+      {{!--
     </div>
     {% endif %}
-    {% if repository.topics %}
+    {% if repository.topics %} --}}
     <div class="tag-wrapper">
-      {% for topic in repository.topics %}
+      {{!-- {% for topic in repository.topics %} --}}
       <span class="tag neumorphism-card">{{topic}}</span>
-      {% endfor %}
+      {{!-- {% endfor %} --}}
     </div>
-    {% endif %}
+    {{!-- {% endif %} --}}
   </div>
-  {% endunless %}
-  {% endfor %}
+  {{!-- {% endunless %} --}}
+  {{!-- {% endfor %} --}}
 </div>
-{% endif %}
+{{!-- {% endif %} --}}
