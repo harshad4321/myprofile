@@ -11,7 +11,7 @@
     - tag: HTML CSS
     - tag: GitHub
     - tag: SQL
-  timeline-side: right
+  timelineside: right
 
 - title: vidya vikas engineering college mysore
   title-url: http://vidyavikasengineering.com/
@@ -23,7 +23,7 @@
     - tag: Cloud Computing 
     - tag: Networking
     - tag: Communications
-  timeline-side: left
+  timelineside: left
 
 - title: GOVT HSS,MANATHANA,KANNUR
   title-url: 
@@ -33,7 +33,7 @@
     - tag: Science
     - tag: Networking
     - tag: Communications
-  timeline-side: right
+  timelineside: right
 
 # - title: Business And Technology University
 #   title-url: 
