@@ -5,11 +5,11 @@
     CV
   </a>.
 </p>
+
 <div class="timeline-wrapper">
   <ul class="timeline">
     {{#each timeline}}
     {{#ifLeft this}}
-    haiiiii
     <li>
       <div class="direction-l">
         <div class="flag-wrapper">
@@ -25,16 +25,43 @@
         </div>
         <div class="desc neumorphism-card" this-aos="zoom-in-right">
           {{this.subtitle}}
-          {{!-- {% if event.tags %} --}}
+          {{#each this.tags}}
           <div class="tag-wrapper">
-            {{!-- {% for tag in event.tags %} --}}
             <span class="tag neumorphism-card">{{this.tag}}</span>
-            {{!-- {% endfor %} --}}
           </div>
-          {{!-- {% endif %} --}}
+          {{/each}}
         </div>
       </div>
     </li>
     {{/ifLeft}}
+    {{!-- {{/each}} --}}
 
+    {{!-- {{#each timeline}} --}}
+    {{#ifRight this}}
+    <li>
+      <div class="direction-r">
+        <div class="flag-wrapper">
+          <span class="hexagon"></span>
+          <span class="flag neumorphism-button" data-aos="zoom-in-left">
+            <a href="{{this.title-url}}" target="_blank" rel="noreferrer">
+              <span>{{this.title}}</span>
+            </a>
+          </span>
+          <span class="time-wrapper" data-aos="zoom-in-left">
+            <span class="time neumorphism-card">{{this.date}}</span>
+          </span>
+        </div>
+        <div class="desc neumorphism-card" data-aos="zoom-in-left">
+          {{this.subtitle}}
+          {{#each this.tags}}
+          <div class="tag-wrapper">
+            <span class="tag neumorphism-card">{{this.tag}}</span>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </li>
+    {{/ifRight}}
     {{/each}}
+  </ul>
+</div>

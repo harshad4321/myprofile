@@ -35,18 +35,18 @@ const timelines = yaml.load(fs.readFileSync(timeline, 'utf8'));
 const Data = yaml.load(fs.readFileSync(data, 'utf8'));
 
 
-// let vss = timelines; 
 
-Handlebars.registerHelper('ifLeft', function (timelines, options) {
-  if (timelines.timelineside === 'left') {
+Handlebars.registerHelper('ifRight', function (timelines, options) {
+  if (timelines.timelineside === 'right') {
     return options.fn(this);
   } else {
     return options.inverse(this);
   }
 });
+// let vss = timelines; 
 
-Handlebars.registerHelper('ifright', function (timelines, options) {
-  if (timelines.timelineside === 'right') {
+Handlebars.registerHelper('ifLeft', function (timelines, options) {
+  if (timelines.timelineside === 'left') {
     return options.fn(this);
   } else {
     return options.inverse(this);

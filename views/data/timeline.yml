@@ -1,6 +1,6 @@
-- title: Self-Learning
-  # title-url: https://exactpro.com/
-  date: Apr 2021 - Present
+- title: Self-Educated
+  title-url: https://iunschool.com/10-famous-people-who-were-self-educated/
+  date: Apr 2022 - Present
   subtitle: Software Engineer
   tags:
     - tag: JavaScript
@@ -33,10 +33,5 @@
     - tag: Science
     - tag: Networking
     - tag: Communications
-  timelineside: right
+  timelineside: right 
 
-# - title: Business And Technology University
-#   title-url: 
-#   date: 2019 - 2023
-#   subtitle: Bachelor of Information Systems and Technologies
-#   timeline-side: left
