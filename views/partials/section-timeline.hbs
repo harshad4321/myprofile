@@ -6,6 +6,8 @@
   </a>.
 </p>
 
+{{!-- timeline --}}
+
 <div class="timeline-wrapper">
   <ul class="timeline">
     {{#each timeline}}
@@ -25,18 +27,18 @@
         </div>
         <div class="desc neumorphism-card" this-aos="zoom-in-right">
           {{this.subtitle}}
-          {{#each this.tags}}
+          {{!-- {{#each this.tags}} --}}
           <div class="tag-wrapper">
-            <span class="tag neumorphism-card">{{this.tag}}</span>
+            {{#each this.tags}}
+            <span class="tag neumorphism-card">{{tag}}</span>
+            {{/each}}
           </div>
-          {{/each}}
+          {{!-- {{/each}} --}}
         </div>
       </div>
     </li>
     {{/ifLeft}}
-    {{!-- {{/each}} --}}
 
-    {{!-- {{#each timeline}} --}}
     {{#ifRight this}}
     <li>
       <div class="direction-r">
@@ -53,11 +55,11 @@
         </div>
         <div class="desc neumorphism-card" data-aos="zoom-in-left">
           {{this.subtitle}}
-          {{#each this.tags}}
           <div class="tag-wrapper">
-            <span class="tag neumorphism-card">{{this.tag}}</span>
+            {{#each this.tags}}
+            <span class="tag neumorphism-card">{{tag}}</span>
+            {{/each}}
           </div>
-          {{/each}}
         </div>
       </div>
     </li>

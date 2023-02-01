@@ -1,9 +1,7 @@
 setTimeout(function () {
   fadeOutPreloader(document.getElementById('preloader'), 69);
-
   var container = document.getElementById("preloader");
   container.style.backgroundColor = " #1b3f65";
-
 }, 1500);
 
 $(document).ready(function () {
@@ -54,7 +52,8 @@ function fadeOutPreloader(element, duration) {
       // Allow horizontal scroll
       document.documentElement.style.overflowY = 'auto';
 
-      document.getElementById('preloader').remove();
+      // document.getElementById('preloader').remove();
+
 
       clearInterval(interval);
     } else {
