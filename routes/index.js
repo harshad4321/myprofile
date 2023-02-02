@@ -13,7 +13,6 @@ var Handlebars = require('handlebars');
 
 
 
-
 // Read the YML file
 const projects = path.join('views', 'data', 'projects.yml');
 const skill = path.join('views', 'data', 'skills-frameworks.yml');

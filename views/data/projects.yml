@@ -1,0 +1,86 @@
+
+- name: xxxx
+  web-url: 
+  git-url: https://github.com/harshad4321/shareto-mt
+  subtitle: Peer to Peer (P2P) file sharing service focused on privacy and security.
+  tags:
+    - tag: JavaScript
+    - tag: Node.js
+    - tag: Express.js
+    - tag: MongoDB
+    - tag: HTML CSS
+    - tag: Bootstrap
+    - tag: timeago.js
+    - tag: qrcode
+  description: Peer to Peer (P2P) file sharing service focused on privacy and security.
+            • 100 MB on the size of the files you can send, 
+            • share the link to anyone
+            • send the file through Email
+            • QR coder
+
+
+- name: E‑COMMERCE APP –
+  web-url: 
+  git-url: https://github.com/harshad4321/shoppigCart-nodejs-crud
+  subtitle: feature rich e‑commerce app for gadgets.
+  tags:
+    - tag: JavaScript
+    - tag: Node.js
+    - tag: Express.js
+    - tag: MongoDB
+    - tag: HTML CSS
+    - tag: socket.io
+    - tag: Bootstrap
+    - tag: razorpay
+    - tag: js-image-zoom
+    - tag: fileupload
+    - tag: bcrypt
+    - tag: jquery
+    - tag: Ajax
+    - tag: JWT
+  description: • Implemented all the necessary e commerce functionalities like product listing, cart, orders, etc
+              • Additional features include
+              • Image Cropping and Product image zoom
+              • Product purchase History
+              • User profile with orders
+              • User can add ,update and delete product reviews
+              • Product search feature
+              • User profile, User can change UserName, Email, and Password
+              • Product, user Management on Admin side
+              • Payment gateways integrated  Razorpay, PayPal
+
+- name: CRUD API
+  web-url: 
+  git-url: https://github.com/harshad4321/food-tips-Rescipy-website-API
+  subtitle: Software Engineer
+  tags:
+    - tag: JavaScript
+    - tag: Node.js
+    - tag: Express.js
+    - tag: MongoDB
+    - tag: Bootstrap
+    - tag: Passport js
+    - tag: HTML CSS
+  description: A CRUD recipe web app
+            • A CRUD recipe web app, user can ‑(Create, Read, Update, Delete) Recipe
+
+
+
+- name: File Sharing App–
+  web-url: 
+  git-url: https://github.com/harshad4321/shareto-mt
+  subtitle: Peer to Peer (P2P) file sharing service focused on privacy and security.
+  tags:
+    - tag: JavaScript
+    - tag: Node.js
+    - tag: Express.js
+    - tag: MongoDB
+    - tag: HTML CSS
+    - tag: Bootstrap
+    - tag: timeago.js
+    - tag: qrcode
+  description: Peer to Peer (P2P) file sharing service focused on privacy and security.
+            • 100 MB on the size of the files you can send, 
+            • share the link to anyone
+            • send the file through Email
+            • QR coder

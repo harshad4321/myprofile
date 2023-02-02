@@ -5,13 +5,13 @@ baseurl: ""
 username: HARSHAD.N
 typing_text: Software Engineer / Backend Developer 
 
-email: harshad@gmail.com
-telegram_username: in_solitum
-linkedin_username: dkobalia
-github_username: insolitum
-facebook_username: DaWeedGone
-instagram_username: __m.artian__
-viber_number: 995599014780
+email: narshad.n4321@gmail.com
+telegram_username: 
+linkedin_username: harshad-n-070770205/
+github_username: harshad4321
+facebook_username: 
+instagram_username: 
+viber_number: 
 
 show_aboutme_card: false
 about_me_title: About Me
@@ -34,11 +34,11 @@ show_contact_card: true
 contact_title: Contacts
 contact_description: Feel free to contact me wherever is comfortable for you
 
-repository: insolitum/insolitum.github.io
+repository: 
 github_pages:
-  - sorting_algos
-  - character_encoder
-  - insolitum.github.io
+  - xx
+  - xx
+  - xx
   
 projects:
   sort_by: stars
@@ -46,10 +46,10 @@ projects:
     archived: true
     forks: true
     projects:
-      - insolitum
+      - xx
 
 plugins:
-  - "jekyll-github-metadata"
+  - "xxx"
 
 exclude:
   [
