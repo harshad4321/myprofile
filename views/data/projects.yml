@@ -1,8 +1,8 @@
 
-- name: xxxx
-  web-url: 
-  git-url: https://github.com/harshad4321/shareto-mt
-  subtitle: Peer to Peer (P2P) file sharing service focused on privacy and security.
+- name: File Sharing App–
+  webUrl: 
+  git-url :
+ 
   tags:
     - tag: JavaScript
     - tag: Node.js
@@ -20,9 +20,9 @@
 
 
 - name: E‑COMMERCE APP –
-  web-url: 
+  webUrl: erer
   git-url: https://github.com/harshad4321/shoppigCart-nodejs-crud
-  subtitle: feature rich e‑commerce app for gadgets.
+
   tags:
     - tag: JavaScript
     - tag: Node.js
@@ -50,9 +50,9 @@
               • Payment gateways integrated  Razorpay, PayPal
 
 - name: CRUD API
-  web-url: 
+  webUrl: 
   git-url: https://github.com/harshad4321/food-tips-Rescipy-website-API
-  subtitle: Software Engineer
+ 
   tags:
     - tag: JavaScript
     - tag: Node.js
@@ -67,9 +67,9 @@
 
 
 - name: File Sharing App–
-  web-url: 
+  webUrl: 
   git-url: https://github.com/harshad4321/shareto-mt
-  subtitle: Peer to Peer (P2P) file sharing service focused on privacy and security.
+
   tags:
     - tag: JavaScript
     - tag: Node.js

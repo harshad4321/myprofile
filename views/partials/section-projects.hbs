@@ -15,10 +15,9 @@
     <a class="highlight-link" href="{{this.git-url}}" target="_blank" rel="noreferrer">
       GitHub
     </a>
-    {{#if this.web-url}}
+    {{#if this.webUrl}}
     <div class="landing-icons" style="justify-content: right">
-      <a class="social-link telegram" aria-label="Website" target="_blank" rel="noreferrer"
-        href="https://{{site.github_username}}.github.io/{{this.name}}">
+      <a class="social-link telegram" aria-label="Website" target="_blank" rel="noreferrer" href="{{this.webUrl}}">
         <svg viewBox="0 0 200 200" class="circle">
           <circle cx="100" cy="100" r="80" />
         </svg>
@@ -31,6 +30,7 @@
       </a>
     </div>
     {{/if}}
+
     <div class="tag-wrapper">
       {{#each this.tags}}
       <span class="tag neumorphism-card">{{tag}}</span>

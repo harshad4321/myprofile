@@ -1,9 +1,9 @@
-<h1 class="title">{{site.contact_title}}</h1>
-<p class="subtitle">{{site.contact_description}}</p>
+<h1 class="title">{{Data.contact_title}}</h1>
+<p class="subtitle">{{Data.contact_description}}</p>
 
 <div class="contact-icons">
-  {{!-- {% if site.email != null %} --}}
-  <a class="social-link" aria-label="My E-Mail" href="mailto:{{site.email}}">
+  {{#if Data.email}}
+  <a class="social-link" aria-label="My E-Mail" href="mailto:{{Data.email}}">
     <div class="social">
       <svg class="social-svg" viewBox="0 0 48 48">
         <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" href="/img/solid.svg#envelope ">
@@ -11,22 +11,22 @@
       </svg>
     </div>
   </a>
-  {{!-- {% endif %} --}}
+  {{/if}}
 
-  {{!-- {% if site.telegram_username != null %} --}}
+  {{#if Data.telegram_username }}
   <a class="social-link telegram" aria-label="My Telegram" target="_blank" rel="noreferrer"
-    href="https://telegram.me/{{site.telegram_username}}">
+    href="https://telegram.me/{{Data.telegram_username}}">
     <div class="social">
       <svg class="social-svg" viewBox="0 0 48 48">
         <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" href="/img/brands.svg#telegram-plane"></use>
       </svg>
     </div>
   </a>
-  {{!-- {% endif %} --}}
+  {{/if}}
 
-  {{!-- {% if site.linkedin_username != null %} --}}
+  {{#if Data.linkedin_username}}
   <a class="social-link linkedin" aria-label="My LinkedIn" target="_blank" rel="noreferrer"
-    href="https://www.linkedin.com/in/{{site.linkedin_username}}">
+    href="https://www.linkedin.com/in/{{Data.linkedin_username}}">
     <div class="social">
       <svg class="social-svg" viewBox="0 0 48 48">
         <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" href="/img/brands.svg#linkedin-in">
@@ -34,49 +34,49 @@
       </svg>
     </div>
   </a>
-  {{!-- {% endif %} --}}
+  {{/if}}
 
-  {{!-- {% if site.github_username != null %} --}}
+  {{#if Data.github_username }}
   <a class="social-link" aria-label="My GitHub" target="_blank" rel="noreferrer"
-    href="https://github.com/{{site.github_username}}">
+    href="https://github.com/{{Data.github_username}}">
     <div class="social">
       <svg class="social-svg" viewBox="0 0 48 48">
         <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" href="/img/brands.svg#github"></use>
       </svg>
     </div>
   </a>
-  {{!-- {% endif %} --}}
+  {{/if}}
 
-  {{!-- {% if site.viber_number != null %} --}}
+  {{#if Data.viber_number}}
   <a class="social-link" aria-label="My Viber" target="_blank" rel="noreferrer"
-    href="viber://chat?number={{site.viber_number}}">
+    href="viber://chat?number={{Data.viber_number}}">
     <div class="social">
       <svg class="social-svg" viewBox="0 0 48 48">
         <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" href="/img/brands.svg#viber"></use>
       </svg>
     </div>
   </a>
-  {{!-- {% endif %} --}}
+  {{/if}}
 
-  {{!-- {% if site.instagram_username != null %} --}}
+  {{#if Data.instagram_username}}
   <a class="social-link instagram" aria-label="My Instagram" target="_blank" rel="noreferrer"
-    href="https://instagram.com/{{site.instagram_username}}">
+    href="https://instagram.com/{{Data.instagram_username}}">
     <div class="social">
       <svg class="social-svg" viewBox="0 0 48 48">
         <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" href="/img/brands.svg#instagram"></use>
       </svg>
     </div>
   </a>
-  {{!-- {% endif %} --}}
+  {{/if}}
 
-  {{!-- {% if site.facebook_username != null %} --}}
+  {{#if Data.facebook_username }}
   <a class="social-link facebook" aria-label="My Facebook" target="_blank" rel="noreferrer"
-    href="https://facebook.com/{{site.facebook_username}}">
+    href="https://facebook.com/{{Data.facebook_username}}">
     <div class="social">
       <svg class="social-svg" viewBox="0 0 48 48">
         <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" href="/img/brands.svg#facebook-f"></use>
       </svg>
     </div>
   </a>
-  {{!-- {% endif %} --}}
+  {{/if}}
 </div>
