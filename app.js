@@ -7,12 +7,12 @@ const fs = require('fs')
 const sass = require('node-sass');
 const yaml = require('js-yaml');
 
-const chokidar = require('chokidar');
+// const chokidar = require('chokidar');
 
 //router
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+// var usersRouter = require('./routes/users');
 
 var hbs = require('express-handlebars')
 const HBS = hbs.create({});
@@ -25,59 +25,12 @@ var Handlebars = require('handlebars');
 var app = express();
 
 
-// // Read the YML file
-// const projects = path.join(__dirname, 'views', 'data', 'projects.yml');
-// const skill = path.join(__dirname, 'views', 'data', 'skills-frameworks.yml');
-// const languages = path.join(__dirname, 'views', 'data', 'skills-languages.yml');
-// const tolls = path.join(__dirname, 'views', 'data', 'skills-tools.yml');
-// const timeline = path.join(__dirname, 'views', 'data', 'timeline.yml');
-
-
-// // Define an array of YML file paths
-// const ymlFiles = [
-//   projects,
-//   skill,
-//   languages,
-//   tolls,
-//   timeline
-// ];
-
-// console.log(ymlFiles)
-
-// // Loop through the files and parse each one
-// let data = {};
-// ymlFiles.forEach((file) => {
-//   try {
-//     data[file] = yaml.load(fs.readFileSync(file, 'utf8'));
-//   } catch (e) {
-//     console.error(e);
-//   }
-// });
-
-
-
-
-// const watchData = () => {
-//   chokidar.watch(['/views/data/*.yml', '_config.yml', 'assets/*.json']).on('change', (path) => {
-//     console.log(`File ${path} has been changed`);
-//     // You can run your own code here when the file changes
-//   });
-// };
-
-// watchData();
-
-
-
-
-
 // view engine setup
 // app.engine('html', engines.swig);
 app.set('views', path.join(__dirname, 'views'));
 // app.set('views', __dirname + 'views');
 app.set('view engine', 'hbs');
 app.engine('hbs', hbs.engine({ extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views/layout/', partialsDir: __dirname + '/views/partials/' }));
-
-
 
 
 
@@ -134,7 +87,7 @@ HBS.handlebars.registerHelper("notEquals", function (v1, v2, options) {
 });
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+// app.use('/users', usersRouter);
 
 
 // catch 404 and forward to error handler

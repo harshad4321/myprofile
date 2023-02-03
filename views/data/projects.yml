@@ -1,26 +1,17 @@
 
-- name: File Sharing App–
-  webUrl: 
-  git-url :
- 
+- name: my-profile
+  webUrl: https://harshad4321githubio-production.up.railway.app/
+  git-url : https://github.com/harshad4321/myprofile
   tags:
     - tag: JavaScript
     - tag: Node.js
     - tag: Express.js
-    - tag: MongoDB
-    - tag: HTML CSS
-    - tag: Bootstrap
-    - tag: timeago.js
-    - tag: qrcode
-  description: Peer to Peer (P2P) file sharing service focused on privacy and security.
-            • 100 MB on the size of the files you can send, 
-            • share the link to anyone
-            • send the file through Email
-            • QR coder
+    - tag: SCSS
+  description: Private Webpage
 
 
 - name: E‑COMMERCE APP –
-  webUrl: erer
+  webUrl: https://shoppigcart-nodejs-crud-production.up.railway.app/
   git-url: https://github.com/harshad4321/shoppigCart-nodejs-crud
 
   tags:
@@ -69,7 +60,6 @@
 - name: File Sharing App–
   webUrl: 
   git-url: https://github.com/harshad4321/shareto-mt
-
   tags:
     - tag: JavaScript
     - tag: Node.js
@@ -84,3 +74,30 @@
             • share the link to anyone
             • send the file through Email
             • QR coder
+
+            
+            
+- name: chattingApI-chat-on-
+  webUrl: 
+  git-url: https://github.com/harshad4321/shareto-mt
+
+  tags:
+    - tag: JavaScript
+    - tag: Node.js
+    - tag: Express.js
+    - tag: MongoDB
+    - tag: Socket.IO 
+    - tag: Bootstrap
+  description: A real-time chat application built using Node.js, Express, Redis, and Socket.IO.
+
+
+- name: -React-Todo-app
+  webUrl: 
+  git-url: https://github.com/harshad4321/-React-Todo-app
+
+  tags:
+    - tag: React.js
+    - tag: React Router
+    - tag: React DOM
+    - tag: Web-vitals
+  description: The Todo App is a simple and user-friendly web application for managing daily tasks and to-dos. Built using React.js and React Router, this app allows users to add, edit, and delete tasks with ease. The interface is intuitive and makes it easy to keep track of one's tasks and prioritize them. Whether you're a student, working professional, or just someone looking to keep their life organized, the Todo App is the perfect solution. With its modern design and robust functionality, it's sure to make task management a breeze.

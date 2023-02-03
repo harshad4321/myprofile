@@ -54,8 +54,6 @@ Handlebars.registerHelper('ifLeft', function (timelines, options) {
 
 
 
-
-
 /* GET home page. */
 router.get('/', function (req, res, next) {
   res.render('index', {
