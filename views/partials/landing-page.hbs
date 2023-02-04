@@ -10,7 +10,7 @@
       </span>
     </h1>
     <div class="landing-icons">
-      {{!-- {% if site.email != null %} --}}
+      {{#if Data.email}}
       <a class="social-link email" aria-label="My E-Mail" href="mailto:{{Data.email}}">
         <svg viewBox="0 0 200 200" class="circle">
           <circle cx="100" cy="100" r="80" />
@@ -22,9 +22,9 @@
         </div>
         <span class="label">E-Mail</span>
       </a>
-      {{!-- {% endif %} --}}
+      {{/if}}
 
-      {{!-- {% if site.telegram_username != null %} --}}
+      {{#if Data.telegram_username}}
       <a class="social-link telegram" aria-label="My Telegram" target="_blank" rel="noreferrer"
         href="https://telegram.me/{{Data.telegram_username}}">
         <svg viewBox="0 0 200 200" class="circle">
@@ -38,9 +38,9 @@
         </div>
         <span class="label">Telegram</span>
       </a>
-      {{!-- {% endif %} --}}
+      {{/if}}
 
-      {{!-- {% if site.linkedin_username != null %} --}}
+      {{#if Data.linkedin_username}}
       <a class="social-link linkedin" aria-label="My LinkedIn" target="_blank" rel="noreferrer"
         href="https://www.linkedin.com/in/{{Data.linkedin_username}}">
         <svg viewBox="0 0 200 200" class="circle">
@@ -54,9 +54,9 @@
         </div>
         <span class="label">LinkedIn</span>
       </a>
-      {{!-- {% endif %} --}}
+      {{/if}}
 
-      {{!-- {% if site.github_username != null %} --}}
+      {{#if Data.github_username}}
       <a class="social-link github" aria-label="My GitHub" target="_blank" rel="noreferrer"
         href="https://github.com/{{Data.github_username}}">
         <svg viewBox="0 0 200 200" class="circle">
@@ -70,9 +70,9 @@
         </div>
         <span class="label">GitHub</span>
       </a>
-      {{!-- {% endif %} --}}
+      {{/if}}
 
-      {{!-- {% if site.viber_number != null %} --}}
+      {{#if site.viber_number}}
       <a class="social-link viber" aria-label="My Viber" target="_blank" rel="noreferrer"
         href="viber://chat?number={{Data.viber_number}}">
         <svg viewBox="0 0 200 200" class="circle">
@@ -85,9 +85,9 @@
         </div>
         <span class=" label">Viber</span>
       </a>
-      {{!-- {% endif %} --}}
+      {{/if}}
 
-      {{!-- {% if site.instagram_username != null %} --}}
+      {{#if site.instagram_username}}
       <a class="social-link instagram" aria-label="My Instagram" target="_blank" rel="noreferrer"
         href="https://www.instagram.com/{{Data.instagram_username}}">
         <svg viewBox="0 0 200 200" class="circle">
@@ -101,10 +101,10 @@
         </div>
         <span class="label">Instagram</span>
       </a>
-      {{!-- {% endif %} --}}
+      {{/if}}
 
 
-      {{!-- {% if site.facebook_username != null %} --}}
+      {{#if site.facebook_username}}
       <a class="social-link facebook" aria-label="My Facebook" target="_blank" rel="noreferrer"
         href="https://facebook.com/{{site.facebook_username}}">
         <svg viewBox="0 0 200 200" class="circle">
@@ -119,8 +119,7 @@
         </div>
         <span class=" label">Facebook</span>
       </a>
-      {{!-- {% endif %} --}}
+      {{/if}}
     </div>
   </div>
 </div>
-{{!-- {{/if}} --}}

@@ -13,7 +13,6 @@
 - name: E‑COMMERCE APP –
   webUrl: https://shoppigcart-nodejs-crud-production.up.railway.app/
   git-url: https://github.com/harshad4321/shoppigCart-nodejs-crud
-
   tags:
     - tag: JavaScript
     - tag: Node.js
@@ -40,10 +39,10 @@
               • Product, user Management on Admin side
               • Payment gateways integrated  Razorpay, PayPal
 
+
 - name: CRUD API
   webUrl: 
   git-url: https://github.com/harshad4321/food-tips-Rescipy-website-API
- 
   tags:
     - tag: JavaScript
     - tag: Node.js
@@ -80,7 +79,6 @@
 - name: chattingApI-chat-on-
   webUrl: 
   git-url: https://github.com/harshad4321/shareto-mt
-
   tags:
     - tag: JavaScript
     - tag: Node.js
@@ -94,10 +92,10 @@
 - name: -React-Todo-app
   webUrl: 
   git-url: https://github.com/harshad4321/-React-Todo-app
-
   tags:
     - tag: React.js
     - tag: React Router
     - tag: React DOM
     - tag: Web-vitals
   description: The Todo App is a simple and user-friendly web application for managing daily tasks and to-dos. Built using React.js and React Router, this app allows users to add, edit, and delete tasks with ease. The interface is intuitive and makes it easy to keep track of one's tasks and prioritize them. Whether you're a student, working professional, or just someone looking to keep their life organized, the Todo App is the perfect solution. With its modern design and robust functionality, it's sure to make task management a breeze.
+  
